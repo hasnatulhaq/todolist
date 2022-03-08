@@ -9,7 +9,7 @@ function ListPage(){
         <>
         <div className="wrapper">
             <div class="wrapper__container">
-            <Input/><ToButton title='Add'/>
+            <Input /><ToButton title='Add'/>
             </div>
             <div class="wrapper__list">
                 <ListView/>
