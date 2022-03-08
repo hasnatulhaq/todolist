@@ -1,0 +1,16 @@
+.wrapper{
+    background-color: #6993f3;
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.wrapper__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
