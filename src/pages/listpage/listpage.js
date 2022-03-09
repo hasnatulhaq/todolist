@@ -14,9 +14,8 @@ function ListPage(){
     
 
     const listItem = ()=>{
-        console.log("line 17")
         setListData((oItems)=>{
-                return [...oItems,inputtext]
+              return [...oItems,inputtext]
         })
         setInputtext("")
    } 
@@ -26,11 +25,10 @@ function ListPage(){
         <div className="wrapper">
             <div className="wrapper__container">
             <Input title="For todo list" type="text" value={inputtext} handlefunc={handleInput}/>
-            <ToButton title='Add' onpress={listItem}/>
+            <ToButton title='Add' onpress={listItem} handleanother={handleInput}/>
             </div>
             <div className="wrapper__list">
                 <ListView label={inputtext} array={listdata} handleClose={setListData}/>
-                
             </div>
            
         </div>

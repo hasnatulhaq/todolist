@@ -5,7 +5,10 @@ function ListView(props){
     
 
   const removeitems = (value)=>{
-       console.log("removeitems function is call ",props,value)
+       const filtereditems = props.array.filter((data) => {
+        return data !== value
+    })
+    props.handleClose(filtereditems)
 } 
 
     return(
